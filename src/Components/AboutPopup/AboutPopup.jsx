@@ -9,13 +9,15 @@ export default function AboutPopup({setAboutPopupOpen}) {
         <img src={LogoIcon} alt="" />
 
         <div className='textContainer'>
-          <div className='afterLine'>
-            <span>Hello, my name is Bryan L.Cordeiro, 2D animator.</span>
-            <span >Get in touch and let me turn your ideas into a beautiful project.</span>
-          </div>
-          <div className='ptText'>
-            <span>Olá, meu nome é Bryan L.Cordeiro, animador 2D.</span>
-            <span>Entre em contato e deixe que eu transforme suas ideias em um belo projeto</span>
+          <div className='test'>
+            <div className='afterLine'>
+              <span>Hello, my name is Bryan L.Cordeiro, 2D animator.</span>
+              <span >Get in touch and let me turn your ideas into a beautiful project.</span>
+            </div>
+            <div className='ptText'>
+              <span>Olá, meu nome é Bryan L.Cordeiro, animador 2D.</span>
+              <span>Entre em contato e deixe que eu transforme suas ideias em um belo projeto</span>
+            </div>
           </div>
         </div>
 
