@@ -1,0 +1,320 @@
+.popupContainerMaster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: rgb(36, 36, 36);
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    width: 50%;
+    height: 90vh;
+
+    position: fixed;
+    bottom: 0px;
+    z-index: 3000;
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+    animation: open 1s;
+}
+
+@keyframes open {
+    from {
+        transform: translateY(600px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.buttonClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: none;
+
+    color: white;
+
+    font-size: 1.7rem;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    background: transparent;
+}
+
+.projectsPopup {
+    width: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.demoReel {
+    background-color: white;
+
+    width: 70%;
+    height: 200px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.demoReel:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.hope {
+    background-color: white;
+
+    width: 40%;
+    height: 100px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.hope:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.strangePassenger {
+    background-color: white;
+
+    width: 30%;
+    height: 100px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.strangePassenger:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.strangeName {
+    padding: 10px;
+}
+
+.obak {
+    background-color: white;
+
+    width: 50%;
+    height: 100px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.obak:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.jotan {
+    background-color: white;
+
+    width: 20%;
+    height: 100px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.jotan:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.paranoia {
+    background-color: white;
+
+    width: 35%;
+    height: 100px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.paranoia:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.inside {
+    background-color: white;
+
+    width: 35%;
+    height: 100px;
+
+    color: black;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.inside:hover {
+    transform: scale(.9);
+    transition: 1s;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+
+    width: 900px;
+}
+
+.containerProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    padding: 30px 0px;
+}
+
+.allitemsmap {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.allitemsmap img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    transition: .5s;
+}
+
+.allitemsmap img:hover {
+    opacity: .4;
+
+    cursor: pointer;
+
+    transform: scale(1.1);
+
+    transition: .5s;
+
+    filter: blur(1px);
+}
+
+.allitemsmap span {
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+
+    border-radius: 6px;
+}
+
+@media (max-width: 739px) {
+    .popupContainerMaster{
+        width: 100%;
+    }
+}
+

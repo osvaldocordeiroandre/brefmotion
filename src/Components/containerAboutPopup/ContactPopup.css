@@ -1,0 +1,180 @@
+.containerAboutPopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: rgb(36, 36, 36);
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    width: 50%;
+    height: 90vh;
+
+    position: fixed;
+    bottom: 0px;
+    z-index: 3000;
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+    animation: open 1s;
+}
+
+@keyframes open {
+    from {
+        transform: translateY(600px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.closeAbout {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: none;
+
+    color: white;
+
+    font-size: 1.7rem;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    background: transparent;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.inputName{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+
+.inputName input {
+    padding: 6px;
+
+    border-radius: 4px;
+    border: 1px solid rgb(163, 163, 163);
+
+    width: 500px;
+    height: 30px;
+
+    background-color: transparent;
+
+    margin-top: 10px;
+
+    color: white;
+}
+
+.inputEmail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+
+    margin-top: 20px;
+}
+
+.inputEmail input {
+    padding: 6px;
+
+    border-radius: 4px;
+    border: 1px solid rgb(163, 163, 163);
+
+    width: 500px;
+    height: 30px;
+
+    background-color: transparent;
+
+    margin-top: 10px;
+
+    color: white;
+}
+
+.textArea {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+
+    margin: 20px 0px;
+}
+
+.textArea textarea {
+    padding: 6px;
+
+    border-radius: 4px;
+    border: 1px solid rgb(163, 163, 163);
+
+    width: 500px;
+    height: 100px;
+
+    background-color: transparent;
+
+    margin-top: 10px;
+
+    color: white;
+
+    resize: none;
+}
+
+.aboutButton{
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    width: 100px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.aboutButton:hover{
+    background-color: black;
+
+    color: white;
+}
+
+@media (max-width: 1064px) {
+    .inputName input{
+        width: 90%;
+    }
+
+    .inputEmail input {
+        width: 90%;
+    }
+
+    .textArea textarea {
+        max-width: 170px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 739px) {
+    .containerAboutPopup{
+        width: 100%;
+    }
+}
