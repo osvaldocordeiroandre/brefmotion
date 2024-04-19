@@ -107,12 +107,21 @@
 }
 
 .boxBehance:hover .textService h5 {
-    text-align: end;
-
     font-size: .6rem;
 
     transition: .5s;
 
+}
+
+.textService {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxBehance .textService h5 {
+    width: 100%;
+
+    text-align: end;
 }
 
 .boxBehance:hover .LogoBehance h4 {

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import BoxProjectsPopup from '../../Components/ProjectsPopup/BoxProjectsPopup';
 import ContactPopup from '../../Components/containerAboutPopup/ContactPopup';
 import AboutPopup from '../../Components/AboutPopup/AboutPopup';
+import Footer from '../../Components/Footer/Footer';
 
 export default function Home() {
     const [projectsPopupOpen, setProjectsPopupOpen] = useState(false);
@@ -24,11 +25,11 @@ export default function Home() {
 
             <div className='BoxesContainer'>
                 <div className="boxBehance" onClick={() => setProjectsPopupOpen(true)}>
-                    <div className='LogoBehance'> <h4> Bref Motion </h4> </div>
+                    <div className='LogoBehance'> <h4> 「 Bref Motion </h4> </div>
                     <div className='Projects'>
                         <h1> Projects </h1>
                     </div>
-                    <div className='textService'> <h5> See my services </h5> </div>
+                    <div className='textService'> <h5> See my services 」</h5> </div>
                 </div>
 
                 {aboutPopupOpen && (
@@ -52,6 +53,7 @@ export default function Home() {
                     </div>
                     <div className='message'> <h5>Make your ideas a reality</h5> </div>
                 </div>
+                <Footer />
             </div>
         </div>
 

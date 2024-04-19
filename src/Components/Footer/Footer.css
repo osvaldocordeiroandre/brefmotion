@@ -1,0 +1,44 @@
+.containerFooter{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0px;
+}
+
+.containerFooter .iconsFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram svg {
+    opacity: .4;
+}
+
+.emailIcons svg {
+    opacity: .4;
+}
+
+.linkedinIcon svg {
+    opacity: .4;
+}
+
+.instagram svg:hover{
+    opacity: 1;
+}
+
+.emailIcons svg:hover{
+    opacity: 1;
+}
+
+.linkedinIcon svg:hover{
+    opacity: 1;
+}
+
+.containerFooter .iconsFooter svg{
+    cursor: pointer;
+}
