@@ -88,6 +88,8 @@
 
     animation: transformLoop 6s infinite ease-in-out;
 
+    cursor: pointer;
+
 }
 
 @keyframes slide {
@@ -102,14 +104,6 @@
         opacity: 1;
     }
     
-}
-
-.boxBehance:hover {
-    transform: scale(1.1);
-
-    cursor: pointer;
-
-    transition: .5s;
 }
 
 .boxBehance:hover .textService h5 {
@@ -158,6 +152,22 @@
     transition: .5s;
 
     animation: slide 2s ;
+}
+
+.boxAbout:hover{
+    transform: scale(1.1);
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.boxAbout:hover .works {
+    text-align: end;
+}
+
+.boxAbout:hover .boxAboutName h5 {
+    font-size: .7rem;
 }
 
 @keyframes transformLoop {

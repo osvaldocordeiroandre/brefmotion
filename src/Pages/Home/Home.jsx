@@ -36,7 +36,7 @@ export default function Home() {
                 )}
 
                 <div className="boxAbout" onClick={() => setAboutPopupOpen(true)}>
-                    <div> <h5> Bref Motion </h5> </div>
+                    <div className='boxAboutName'> <h5> Bref Motion </h5> </div>
                     <div className='About'> <h1> About Me </h1> </div>
                     <div className='works'> <h5> Motion Designer and Animations </h5> </div>
                 </div>
