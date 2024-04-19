@@ -25,11 +25,20 @@ export default function Home() {
 
             <div className='BoxesContainer'>
                 <div className="boxBehance" onClick={() => setProjectsPopupOpen(true)}>
-                    <div className='LogoBehance'> <h4> 「 Bref Motion </h4> </div>
+                    <div className="caracter"></div>
+                    <div className="caractertwo"></div>
+                    <div className="caracterRight"></div>
+                    <div className="caractertwoRight"></div>
+                    <div className='LogoBehance'>
+                        <h4> Bref Motion </h4>
+                    </div>
                     <div className='Projects'>
                         <h1> Projects </h1>
                     </div>
-                    <div className='textService'> <h5> See my services 」</h5> </div>
+                    <div className='textService'>
+                        <h5> See my services </h5>
+                    </div>
+
                 </div>
 
                 {aboutPopupOpen && (

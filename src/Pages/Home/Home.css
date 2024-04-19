@@ -30,12 +30,14 @@
         transform: translateX(100px);
 
         opacity: 0;
-    } to {
+    }
+
+    to {
         transform: translateX(0px);
 
         opacity: 1;
     }
-    
+
 }
 
 .Name h3 {
@@ -52,14 +54,14 @@
     text-align: end;
 }
 
-.Name h1{
+.Name h1 {
     font-family: Rubik Broken Fax;
     font-size: 5rem;
 
     color: white;
 }
 
-.BoxesContainer{
+.BoxesContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +92,8 @@
 
     cursor: pointer;
 
+    position: relative;
+
 }
 
 @keyframes slide {
@@ -98,18 +102,13 @@
         transform: translateX(100px);
 
         opacity: 0;
-    } to {
+    }
+
+    to {
         transform: translateX(0px);
 
         opacity: 1;
     }
-    
-}
-
-.boxBehance:hover .textService h5 {
-    font-size: .6rem;
-
-    transition: .5s;
 
 }
 
@@ -122,6 +121,10 @@
     width: 100%;
 
     text-align: end;
+
+    position: absolute;
+    right: 30px;
+    bottom: 16px;
 }
 
 .boxBehance:hover .LogoBehance h4 {
@@ -130,7 +133,7 @@
     transition: .5s;
 }
 
-.Projects{
+.Projects {
     padding: 20px;
 
     text-align: center;
@@ -160,10 +163,10 @@
 
     transition: .5s;
 
-    animation: slide 2s ;
+    animation: slide 2s;
 }
 
-.boxAbout:hover{
+.boxAbout:hover {
     transform: scale(1.1);
 
     cursor: pointer;
@@ -183,17 +186,23 @@
 
     0% {
         transform: translateY(0px);
-    } 50% {
+    }
+
+    50% {
         transform: translateY(10px);
-    } 75% {
+    }
+
+    75% {
         transform: translateY(0px);
-    } 90% {
+    }
+
+    90% {
         transform: translateY(10px);
-    } 
-    
+    }
+
 }
 
-.About{
+.About {
     padding: 10px;
 }
 
@@ -229,7 +238,7 @@
 
     transition: .5s;
 
-    animation: showAbout 2s ;
+    animation: showAbout 2s;
 }
 
 @keyframes showAbout {
@@ -238,12 +247,14 @@
         transform: translateY(100px);
 
         opacity: 0;
-    } to {
+    }
+
+    to {
         transform: translateY(0px);
 
         opacity: 1;
     }
-    
+
 }
 
 .BoxContact:hover {
@@ -254,7 +265,7 @@
     cursor: pointer;
 }
 
-.BoxContact:hover .me h5{
+.BoxContact:hover .me h5 {
     text-align: end;
 }
 
@@ -280,7 +291,7 @@
     text-align: end;
 }
 
-.MeName{
+.MeName {
     transition: .5s;
 }
 
@@ -290,7 +301,7 @@
     transition: .5s;
 }
 
-.profission{
+.profission {
     transition: .5s;
 }
 
@@ -318,4 +329,63 @@
 
 a {
     text-decoration: none;
+}
+
+.caracter {
+    height: 2px;
+    width: 50px;
+
+    background-color: black;
+
+    position: absolute;
+    left: 24px;
+}
+
+.caractertwo {
+    height: 2px;
+    width: 50px;
+
+    background-color: black;
+
+    rotate: 90deg;
+
+    position: absolute;
+    left: 0;
+    top: 44px;
+}
+
+.LogoBehance h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.caracterRight {
+    height: 2px;
+    width: 50px;
+
+    rotate: 90deg;
+
+    background-color: black;
+
+    position: absolute;
+    right: 0;
+    bottom: 38px;
+}
+
+.caractertwoRight {
+    height: 2px;
+    width: 50px;
+
+    background-color: black;
+
+    position: absolute;
+    right: 24px;
+    bottom: 14px;
+}
+
+.textService h5 {
+    margin-bottom: 2px;
+    margin-right: 2px;
+
+    font-size: .7rem;
 }
