@@ -16,7 +16,7 @@ export default function ImageLoadingSkelet({ src, openPopupFrame, alt, hash, lin
     return (
         <>
             {!imageLoad ? <Blurhash hash={hash} width={300} height={265} resolutionX={31} resolutionY={31} punch={1} /> : 
-            (<img src={src} alt={alt} width={'100%'} height={'100%'} onClick={() => openPopupFrame(link)} />)}
+            <img src={src} alt={alt} width={'100%'} height={'100%'} onClick={() => openPopupFrame(link)} />}
         </>
     )
 }
