@@ -164,6 +164,8 @@
     transition: .5s;
 
     animation: slide 2s;
+
+    position: relative;
 }
 
 .boxAbout:hover {
@@ -239,6 +241,8 @@
     transition: .5s;
 
     animation: showAbout 2s;
+
+    position: relative;
 }
 
 @keyframes showAbout {
@@ -335,7 +339,7 @@ a {
     height: 4px;
     width: 30px;
 
-    background-color: black;
+    background-color: purple;
 
     position: absolute;
     left: 14px;
@@ -347,7 +351,7 @@ a {
     height: 4px;
     width: 30px;
 
-    background-color: black;
+    background-color: purple;
 
     rotate: 90deg;
 
@@ -369,7 +373,7 @@ a {
 
     rotate: 90deg;
 
-    background-color: black;
+    background-color: purple;
 
     position: absolute;
     right: 0;
@@ -382,7 +386,7 @@ a {
     height: 4px;
     width: 30px;
 
-    background-color: black;
+    background-color: purple;
 
     position: absolute;
     right: 14px;
@@ -396,4 +400,129 @@ a {
     margin-right: 2px;
 
     font-size: .7rem;
+}
+
+.aboutcaracter {
+    height: 4px;
+    width: 30px;
+
+    background-color: red;
+
+    position: absolute;
+    left: 14px;
+
+    border-radius: 4px;
+}
+
+.aboutcaractertwo {
+    height: 4px;
+    width: 30px;
+
+    background-color: red;
+
+    rotate: 90deg;
+
+    position: absolute;
+    left: 0;
+    top: 34px;
+
+    border-radius: 4px;
+}
+
+.aboutcaracterRight {
+    height: 4px;
+    width: 30px;
+
+    rotate: 90deg;
+
+    background-color: red;
+
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+
+    border-radius: 4px;
+}
+
+.aboutcaractertwoRight {
+    height: 4px;
+    width: 30px;
+
+    background-color: red;
+
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+
+    border-radius: 4px;
+}
+
+.boxAboutName{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.Contactcaracter {
+    height: 4px;
+    width: 30px;
+
+    background-color: blue;
+
+    position: absolute;
+    top: 20px;
+    left: 14px;
+
+    border-radius: 4px;
+}
+
+.Contactcaractertwo {
+    height: 4px;
+    width: 30px;
+
+    background-color: blue;
+
+    rotate: 90deg;
+
+    position: absolute;
+    left: 0;
+    top: 34px;
+
+    border-radius: 4px;
+}
+
+.ContactcaracterRight {
+    height: 4px;
+    width: 30px;
+
+    rotate: 90deg;
+
+    background-color: blue;
+
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+
+    border-radius: 4px;
+}
+
+.ContactcaractertwoRight {
+    height: 4px;
+    width: 30px;
+
+    background-color: blue;
+
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+
+    border-radius: 4px;
+}
+
+.me {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.message{
+    margin-right: 10px;
 }

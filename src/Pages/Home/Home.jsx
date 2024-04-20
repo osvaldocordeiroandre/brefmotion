@@ -46,6 +46,10 @@ export default function Home() {
                 )}
 
                 <div className="boxAbout" onClick={() => setAboutPopupOpen(true)}>
+                    <div className="aboutcaracter"></div>
+                    <div className="aboutcaractertwo"></div>
+                    <div className="aboutcaracterRight"></div>
+                    <div className="aboutcaractertwoRight"></div>
                     <div className='boxAboutName'> <h5> Bref Motion </h5> </div>
                     <div className='About'> <h1> About Me </h1> </div>
                     <div className='works'> <h5> Motion Designer and Animations </h5> </div>
@@ -56,6 +60,10 @@ export default function Home() {
                 )}
 
                 <div className="BoxContact" onClick={() => setcontactPopupOpen(true)}>
+                    <div className="Contactcaracter"></div>
+                    <div className="Contactcaractertwo"></div>
+                    <div className="ContactcaracterRight"></div>
+                    <div className="ContactcaractertwoRight"></div>
                     <div className='me'> <h5> Bref Motion </h5> </div>
                     <div className='Contact'>
                         <h1> Contact Me </h1>
