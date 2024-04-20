@@ -160,16 +160,43 @@
 
 @media (max-width: 1064px) {
     .inputName input{
-        width: 90%;
+        width: 400px;
     }
 
     .inputEmail input {
-        width: 90%;
+        width: 400px;
     }
 
     .textArea textarea {
-        max-width: 170px;
-        width: 90%;
+        width: 400px;
+    }
+}
+
+@media (max-width: 864px) {
+    .inputName input{
+        width: 300px;
+    }
+
+    .inputEmail input {
+        width: 300px;
+    }
+
+    .textArea textarea {
+        width: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .inputName input{
+        width: 250px;
+    }
+
+    .inputEmail input {
+        width: 250px;
+    }
+
+    .textArea textarea {
+        width: 250px;
     }
 }
 
