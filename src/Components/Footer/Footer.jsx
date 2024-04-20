@@ -21,7 +21,9 @@ export default function Footer() {
                 </div>
 
                 <div className="linkedinIcon">
-                    <FaLinkedin size={24} color='white' />
+                    <a href="https://www.linkedin.com/in/bryanreference-motion-b60219305/" target='_blank'>
+                        <FaLinkedin size={24} color='white' />
+                    </a>
                 </div>
             </div>
         </div>
