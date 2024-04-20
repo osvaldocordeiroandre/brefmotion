@@ -332,18 +332,20 @@ a {
 }
 
 .caracter {
-    height: 2px;
-    width: 50px;
+    height: 4px;
+    width: 30px;
 
     background-color: black;
 
     position: absolute;
-    left: 24px;
+    left: 14px;
+
+    border-radius: 4px;
 }
 
 .caractertwo {
-    height: 2px;
-    width: 50px;
+    height: 4px;
+    width: 30px;
 
     background-color: black;
 
@@ -351,7 +353,9 @@ a {
 
     position: absolute;
     left: 0;
-    top: 44px;
+    top: 34px;
+
+    border-radius: 4px;
 }
 
 .LogoBehance h4 {
@@ -360,8 +364,8 @@ a {
 }
 
 .caracterRight {
-    height: 2px;
-    width: 50px;
+    height: 4px;
+    width: 30px;
 
     rotate: 90deg;
 
@@ -369,18 +373,22 @@ a {
 
     position: absolute;
     right: 0;
-    bottom: 38px;
+    bottom: 24px;
+
+    border-radius: 4px;
 }
 
 .caractertwoRight {
-    height: 2px;
-    width: 50px;
+    height: 4px;
+    width: 30px;
 
     background-color: black;
 
     position: absolute;
-    right: 24px;
-    bottom: 14px;
+    right: 14px;
+    bottom: 10px;
+
+    border-radius: 4px;
 }
 
 .textService h5 {
