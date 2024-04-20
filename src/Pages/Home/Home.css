@@ -330,6 +330,10 @@
     .BoxContact {
         max-width: 300px;
     }
+
+    .Container{
+        padding-top: 110px;
+    }
 }
 
 a {
