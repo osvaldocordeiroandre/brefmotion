@@ -1,29 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
+
 import './ContactPopup.css'
 
-export default function ContactPopup({setcontactPopupOpen}) {
-  return (
-    <div className='containerAboutPopup'>
-        <form action="form" className='formContainer'>
-            <div className="inputName">
-                <span>Nome</span>
-                <input type="text" name="" id="" placeholder='Seu nome...' />
-            </div>
+export default function ContactPopup({ setcontactPopupOpen }) {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSend, setEmailSend] = useState('');
 
-            <div className="inputEmail">
-                <span>E-mail</span>
-                <input type="email" name="" id="" placeholder='Seu endereço de e-mail' />
-            </div>
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-            <div className="textArea">
-                <span>Mensagem</span>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Mensagem'></textarea>
-            </div>
+        const templateParams = {
+            from_name: name,
+            message: message,
+            email: email
+        }
 
-            <button type="submit" className='aboutButton'>Enviar</button>
-        </form>
+        emailjs.send('service_icxogji', 'template_fc8snl4', templateParams, 'ShGgmXgK4DaImQltn').
+            then((response) => {
+                setEmailSend('Email enviado!', response.status)
+                setInterval(() => {
+                    setEmailSend(null)
+                }, 3000);
+                setName('')
+                setEmail('')
+                setMessage('')
+            }, (error) => {
+                console.log('erro', error)
+            })
 
-        <button className='closeAbout' onClick={() => setcontactPopupOpen(false)}>X</button>
-    </div>
-  )
+    }
+
+    return (
+        <div className='containerAboutPopup'>
+            <form action="form" className='formContainer' onSubmit={sendEmail}>
+                <div className="inputName">
+                    <span>Nome</span>
+                    <input type="text" name="" id="" placeholder='Seu nome...' value={name} onChange={(e) => setName(e.target.value)} required />
+                </div>
+
+                <div className="inputEmail">
+                    <span>E-mail</span>
+                    <input type="email" name="" id="" placeholder='Seu endereço de e-mail' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                </div>
+
+                <div className="textArea">
+                    <span>Mensagem</span>
+                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensagem' value={message} onChange={(e) => setMessage(e.target.value)} required />
+                </div>
+
+                <div className="emailSendSpan">
+                    <span>{emailSend}</span>
+                </div>
+
+                <button type="submit" className='aboutButton'>Enviar</button>
+            </form>
+
+            <button className='closeAbout' onClick={() => setcontactPopupOpen(false)}>X</button>
+        </div>
+    )
 }

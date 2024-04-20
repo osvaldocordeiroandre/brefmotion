@@ -205,3 +205,9 @@
         width: 100%;
     }
 }
+
+.emailSendSpan{
+    color: white;
+
+    margin-bottom: 20px;
+}
