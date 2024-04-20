@@ -8,6 +8,7 @@ export default function ContactPopup({ setcontactPopupOpen }) {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSend, setEmailSend] = useState('');
+    const [emailSendLoad, setEmailSendLoad] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -21,8 +22,10 @@ export default function ContactPopup({ setcontactPopupOpen }) {
         emailjs.send('service_icxogji', 'template_fc8snl4', templateParams, 'ShGgmXgK4DaImQltn').
             then((response) => {
                 setEmailSend('Email enviado!', response.status)
+                setEmailSendLoad(true)
                 setInterval(() => {
                     setEmailSend(null)
+                    setEmailSendLoad(false)
                 }, 3000);
                 setName('')
                 setEmail('')
@@ -51,9 +54,11 @@ export default function ContactPopup({ setcontactPopupOpen }) {
                     <textarea name="" id="" cols="30" rows="10" placeholder='Mensagem' value={message} onChange={(e) => setMessage(e.target.value)} required />
                 </div>
 
-                <div className="emailSendSpan">
-                    <span>{emailSend}</span>
-                </div>
+                {emailSendLoad && (
+                    <div className="emailSendSpan">
+                        <span>{emailSend}</span>
+                    </div>
+                )}
 
                 <button type="submit" className='aboutButton'>Enviar</button>
             </form>

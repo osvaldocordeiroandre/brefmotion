@@ -210,4 +210,26 @@
     color: white;
 
     margin-bottom: 20px;
+
+    background-color: rgb(8, 8, 8);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    position: fixed;
+    bottom: 0;
+
+    margin-bottom: 20px;
+
+    animation: emailSendSlide 1s;
+    transition: .5s;
+}
+
+@keyframes emailSendSlide {
+    from {
+        transform: translateY(100%);
+    } to {
+        transform: translateY(0);
+    }
 }
