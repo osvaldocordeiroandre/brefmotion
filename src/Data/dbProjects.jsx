@@ -1,5 +1,4 @@
 const projectsInfos = [
-    {id:'1',nome:'Demo reel', imagem:'https://i.ibb.co/N6YF90t/Pro-reel.jpg', link:'https://drive.google.com/file/d/16VqnPuKL8hIuryC0zQ-AGL7ptjql61Mg/preview', hash:'LFL}ELXB0cRjyT-p?^xtnKxatnR*', ano:'2024'},
     {id:'2',nome:'Passageiro Estranho', imagem:'https://i.ibb.co/BBN1rQB/Pro-passageiro.jpg', link:'https://drive.google.com/file/d/15JDQLG01jT1BWYSfQ2DATtw5kMwxGA6X/preview', hash:'L8PZU-M+NIkp-,x@ozoL_Ht6oyni', ano:'2022'},
     {id:'3',nome:'Obak', imagem:'https://i.ibb.co/P6R3Nky/Obak.jpg', link:'https://drive.google.com/file/d/162_qrGDyEGCf8MlmQ05A0Qoes-2ik3op/preview', hash:'LAAT8LWX~djYx#fgj|j]Rbjcx+bF', ano:'2022'},
     {id:'4',nome:'Jotan', imagem:'https://i.ibb.co/nB5ss9D/Jotan.jpg', link:'https://drive.google.com/file/d/15mW1-pgWMcoTY3o5LkMoqfu2IW_jF9PI/preview', hash:'LDJal?0fELwJ00+^%1pI~C_3W;00', ano:'2022'},

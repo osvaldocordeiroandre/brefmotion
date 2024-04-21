@@ -17,6 +17,9 @@ export default function BoxProjectsPopup({ projectsPopupOpen, setProjectsPopupOp
 
     return (
         <div className='popupContainerMaster'>
+            <div>
+                <img src="https://i.ibb.co/N6YF90t/Pro-reel.jpg" alt="" />
+            </div>
             <div className='containerProjects'>
                 {projectsInfos.map((items) => (
                     <div key={items.id} className='allitemsmap' onClick={() => setIframeLoading(true)}>
