@@ -21,7 +21,8 @@ export default function BoxProjectsPopup({ projectsPopupOpen, setProjectsPopupOp
                 {projectsInfos.map((items) => (
                     <div key={items.id} className='allitemsmap' onClick={() => setIframeLoading(true)}>
                         <ImageLoadingSkelet src={items.imagem} alt={items.nome} openPopupFrame={openPopupFrame} hash={items.hash} link={items.link} />
-                        <span>{items.nome}</span>
+                        <h1 onClick={() => openPopupFrame(items.link)}>{items.nome}</h1>
+                        <h4>{items.ano}</h4>
                     </div>
                 ))}
             </div>

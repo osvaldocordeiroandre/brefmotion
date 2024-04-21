@@ -19,14 +19,14 @@ export default function ContactPopup({ setcontactPopupOpen }) {
             email: email
         }
 
-        emailjs.send('service_icxogji', 'template_fc8snl4', templateParams, 'ShGgmXgK4DaImQltn').
+        emailjs.send('service_jikmn0o', 'template_ixwp8nq', templateParams, 'ShGgmXgK4DaImQltn').
             then((response) => {
                 setEmailSend('Email enviado!', response.status)
                 setEmailSendLoad(true)
                 setInterval(() => {
                     setEmailSend(null)
                     setEmailSendLoad(false)
-                }, 3000);
+                }, 20000);
                 setName('')
                 setEmail('')
                 setMessage('')

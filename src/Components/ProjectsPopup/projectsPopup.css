@@ -276,6 +276,8 @@ iframe {
     overflow: hidden;
 
     border-radius: 10px;
+
+    position: relative;
 }
 
 .allitemsmap img {
@@ -286,7 +288,27 @@ iframe {
     transition: .5s;
 }
 
-.allitemsmap img:hover {
+.allitemsmap h1{
+    display: none;
+
+    position: absolute;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.allitemsmap h4 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    display: none;
+}
+
+.allitemsmap:hover img {
     opacity: .4;
 
     cursor: pointer;
@@ -298,8 +320,12 @@ iframe {
     filter: blur(1px);
 }
 
-.allitemsmap span {
-    margin-top: 20px;
+.allitemsmap:hover h1 {
+    display: flex;
+}
+
+.allitemsmap:hover h4 {
+    display: flex;
 }
 
 ::-webkit-scrollbar{
