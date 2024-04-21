@@ -17,8 +17,12 @@ export default function BoxProjectsPopup({ projectsPopupOpen, setProjectsPopupOp
 
     return (
         <div className='popupContainerMaster'>
-            <div>
+            <div className='demonReels' onClick={() => openPopupFrame('https://drive.google.com/file/d/16VqnPuKL8hIuryC0zQ-AGL7ptjql61Mg/preview')}>
                 <img src="https://i.ibb.co/N6YF90t/Pro-reel.jpg" alt="" />
+                <div className='DemonReelsinfos'>
+                 <h1>Demon Reel</h1>
+                 <h4>2024</h4>
+                </div>
             </div>
             <div className='containerProjects'>
                 {projectsInfos.map((items) => (
