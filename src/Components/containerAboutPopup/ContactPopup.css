@@ -207,11 +207,11 @@
 }
 
 .emailSendSpan{
-    color: white;
+    color: black;
 
     margin-bottom: 20px;
 
-    background-color: rgb(8, 8, 8);
+    background-color: white;
 
     padding: 20px;
 
@@ -220,7 +220,7 @@
     position: fixed;
     bottom: 0;
 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     animation: emailSendSlide 1s;
     transition: .5s;
