@@ -26,7 +26,7 @@ export default function ContactPopup({ setcontactPopupOpen }) {
                 setInterval(() => {
                     setEmailSend(null)
                     setEmailSendLoad(false)
-                }, 20000);
+                }, 6000);
                 setName('')
                 setEmail('')
                 setMessage('')
